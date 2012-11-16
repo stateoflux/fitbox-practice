@@ -1,0 +1,24 @@
+<div class="" id="login">
+  <h4>Log In</h4>
+  <form name="loginForm" class="">
+    <div>
+      <label class="">Email</label>
+      <input type="email" name="email" ng-model="user.email" required>
+      <span class="success"><i class="icon-ok"></i></span>
+      <span class="fail fail-icon"><i class="icon-remove"></i></span>
+      <p class="fail fail-text">We need a valid email address</p>
+    </div>
+    <div>
+      <label class="">Password</label>
+      <input type="password" name="password" ng-model="user.password" required ng-minlength="4">
+      <span class="success"><i class="icon-ok"></i></span>
+      <span class="fail fail-icon"><i class="icon-remove"></i>
+      <p class"fail fail-text">We need at least four characters</p>
+    </div>
+    <div class="controls">
+      <button type="submit" class="btn btn-primary" ng-disabled="isSubmitDisabled()">Create profile</button>
+      <button type="button" class="btn" ng-click="resetForm()">Cancel</button>
+    </div>
+  </form>
+  <p>New to FitBot?  Click <a href="#/signup">here</a> to sign up.</p>
+</div>

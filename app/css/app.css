@@ -1,0 +1,19 @@
+/* app css stylesheet */
+
+/* Validation Support
+ ============================================================================*/
+.success, .fail{
+  display: none;
+}
+
+input.ng-dirty.ng-valid ~ .success {
+  display:inline;
+}
+
+input.ng-dirty.ng-invalid ~ .fail-icon {
+  display:inline;
+}
+
+input.ng-dirty.ng-invalid ~ .fail-text {
+  display:block;
+}
